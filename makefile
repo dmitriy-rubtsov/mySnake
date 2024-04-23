@@ -1,5 +1,5 @@
 mySnake.tap: mySnake.asm loader.bas bas2tap
-	./bas2tap -a=0 loader.bas mySnake.tap
+	./bas2tap -smySnake -a=0 loader.bas mySnake.tap
 	sjasmplus --syntax=aFs mySnake.asm
 
 bas2tap: bas2tap.c
